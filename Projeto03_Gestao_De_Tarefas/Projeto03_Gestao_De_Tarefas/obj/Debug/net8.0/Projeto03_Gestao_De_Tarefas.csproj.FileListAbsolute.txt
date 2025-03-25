@@ -1,0 +1,14 @@
+C:\Users\Aula\source\repos\Projeto03_Gestao_De_Tarefas\Projeto03_Gestao_De_Tarefas\obj\Debug\net8.0\Projeto03_Gestao_De_Tarefas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aula\source\repos\Projeto03_Gestao_De_Tarefas\Projeto03_Gestao_De_Tarefas\obj\Debug\net8.0\Projeto03_Gestao_De_Tarefas.AssemblyInfoInputs.cache
+C:\Users\Aula\source\repos\Projeto03_Gestao_De_Tarefas\Projeto03_Gestao_De_Tarefas\obj\Debug\net8.0\Projeto03_Gestao_De_Tarefas.AssemblyInfo.cs
+C:\Users\Aula\source\repos\Projeto03_Gestao_De_Tarefas\Projeto03_Gestao_De_Tarefas\obj\Debug\net8.0\Projeto03_Gestao_De_Tarefas.csproj.CoreCompileInputs.cache
+C:\Users\Aula\source\repos\Projeto03_Gestao_De_Tarefas\Projeto03_Gestao_De_Tarefas\bin\Debug\net8.0\Projeto03_Gestao_De_Tarefas.exe
+C:\Users\Aula\source\repos\Projeto03_Gestao_De_Tarefas\Projeto03_Gestao_De_Tarefas\bin\Debug\net8.0\Projeto03_Gestao_De_Tarefas.deps.json
+C:\Users\Aula\source\repos\Projeto03_Gestao_De_Tarefas\Projeto03_Gestao_De_Tarefas\bin\Debug\net8.0\Projeto03_Gestao_De_Tarefas.runtimeconfig.json
+C:\Users\Aula\source\repos\Projeto03_Gestao_De_Tarefas\Projeto03_Gestao_De_Tarefas\bin\Debug\net8.0\Projeto03_Gestao_De_Tarefas.dll
+C:\Users\Aula\source\repos\Projeto03_Gestao_De_Tarefas\Projeto03_Gestao_De_Tarefas\bin\Debug\net8.0\Projeto03_Gestao_De_Tarefas.pdb
+C:\Users\Aula\source\repos\Projeto03_Gestao_De_Tarefas\Projeto03_Gestao_De_Tarefas\obj\Debug\net8.0\Projeto03_Gestao_De_Tarefas.dll
+C:\Users\Aula\source\repos\Projeto03_Gestao_De_Tarefas\Projeto03_Gestao_De_Tarefas\obj\Debug\net8.0\refint\Projeto03_Gestao_De_Tarefas.dll
+C:\Users\Aula\source\repos\Projeto03_Gestao_De_Tarefas\Projeto03_Gestao_De_Tarefas\obj\Debug\net8.0\Projeto03_Gestao_De_Tarefas.pdb
+C:\Users\Aula\source\repos\Projeto03_Gestao_De_Tarefas\Projeto03_Gestao_De_Tarefas\obj\Debug\net8.0\Projeto03_Gestao_De_Tarefas.genruntimeconfig.cache
+C:\Users\Aula\source\repos\Projeto03_Gestao_De_Tarefas\Projeto03_Gestao_De_Tarefas\obj\Debug\net8.0\ref\Projeto03_Gestao_De_Tarefas.dll
