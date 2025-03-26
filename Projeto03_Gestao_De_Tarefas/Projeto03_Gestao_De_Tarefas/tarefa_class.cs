@@ -13,5 +13,15 @@ namespace projeto_claudinei
         public string Status { get; set; }
         public string Prioridade { get; set; }
         public string Responsavel { get; set; }
+
+        public tarefa(string titulo, DateOnly DataLimite, string Status, string Prioridade)
+        {
+            this.titulo = titulo;
+            this.DataLimite = DataLimite;
+            this.Status = Status;
+            this.Prioridade = Prioridade;
+        }
     }
+
+
 }
