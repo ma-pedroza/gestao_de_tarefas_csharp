@@ -24,12 +24,17 @@ do
     switch (opcao)
     {
         case "1":
-            Responsavel objeto = Funcoes.instanciarResponsavel();
-            Listas.addListaResponsavel(objeto);
-            Listas.ExibirListaResponsavel();
+            Responsavel objeto = Funcoes.instanciarResponsavel(); // Instacia a classe Responsavel e guarda em variavel
+            Listas.addListaResponsavel(objeto); // Adiciona a variavel(objeto) na lista de responsáveis
+            Listas.ExibirListaResponsavel(); // Exibe a lista somente para teste
             break;
+
+        case "2":
+            Tarefa objetoTarefa = Funcoes.instanciarTarefa();
+            break;
+
         default:
-            Console.WriteLine("Teste"); break;
+            Console.WriteLine("Digite uma opção válida"); break;
     }
 
 } while (opcao != "0");
