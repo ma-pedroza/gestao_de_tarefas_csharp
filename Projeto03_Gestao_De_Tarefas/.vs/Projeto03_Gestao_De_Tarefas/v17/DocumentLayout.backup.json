@@ -1,13 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Aula\\source\\repos\\Projeto03_Gestao_De_Tarefas\\",
+  "WorkspaceRootPath": "C:\\Users\\marce.DESKTOP-IFFUH4S\\OneDrive\\Documents\\gestao_de_tarefas_csharp\\Projeto03_Gestao_De_Tarefas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|c:\\users\\aula\\source\\repos\\projeto03_gestao_de_tarefas\\projeto03_gestao_de_tarefas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|c:\\users\\marce.desktop-iffuh4s\\onedrive\\documents\\gestao_de_tarefas_csharp\\projeto03_gestao_de_tarefas\\projeto03_gestao_de_tarefas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|solutionrelative:projeto03_gestao_de_tarefas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|c:\\users\\aula\\source\\repos\\projeto03_gestao_de_tarefas\\projeto03_gestao_de_tarefas\\responsavel_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|c:\\users\\marce.desktop-iffuh4s\\onedrive\\documents\\gestao_de_tarefas_csharp\\projeto03_gestao_de_tarefas\\projeto03_gestao_de_tarefas\\listas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|solutionrelative:projeto03_gestao_de_tarefas\\listas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|c:\\users\\marce.desktop-iffuh4s\\onedrive\\documents\\gestao_de_tarefas_csharp\\projeto03_gestao_de_tarefas\\projeto03_gestao_de_tarefas\\funcoes_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|solutionrelative:projeto03_gestao_de_tarefas\\funcoes_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|c:\\users\\marce.desktop-iffuh4s\\onedrive\\documents\\gestao_de_tarefas_csharp\\projeto03_gestao_de_tarefas\\projeto03_gestao_de_tarefas\\responsavel_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|solutionrelative:projeto03_gestao_de_tarefas\\responsavel_class.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,13 +34,39 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Funcoes_Class.cs",
+              "DocumentMoniker": "C:\\Users\\marce.DESKTOP-IFFUH4S\\OneDrive\\Documents\\gestao_de_tarefas_csharp\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Funcoes_Class.cs",
+              "RelativeDocumentMoniker": "Projeto03_Gestao_De_Tarefas\\Funcoes_Class.cs",
+              "ToolTip": "C:\\Users\\marce.DESKTOP-IFFUH4S\\OneDrive\\Documents\\gestao_de_tarefas_csharp\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Funcoes_Class.cs",
+              "RelativeToolTip": "Projeto03_Gestao_De_Tarefas\\Funcoes_Class.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T22:34:21.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Listas.cs",
+              "DocumentMoniker": "C:\\Users\\marce.DESKTOP-IFFUH4S\\OneDrive\\Documents\\gestao_de_tarefas_csharp\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Listas.cs",
+              "RelativeDocumentMoniker": "Projeto03_Gestao_De_Tarefas\\Listas.cs",
+              "ToolTip": "C:\\Users\\marce.DESKTOP-IFFUH4S\\OneDrive\\Documents\\gestao_de_tarefas_csharp\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Listas.cs",
+              "RelativeToolTip": "Projeto03_Gestao_De_Tarefas\\Listas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T22:08:44.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Responsavel_Class.cs",
-              "DocumentMoniker": "C:\\Users\\Aula\\source\\repos\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Responsavel_Class.cs",
+              "DocumentMoniker": "C:\\Users\\marce.DESKTOP-IFFUH4S\\OneDrive\\Documents\\gestao_de_tarefas_csharp\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Responsavel_Class.cs",
               "RelativeDocumentMoniker": "Projeto03_Gestao_De_Tarefas\\Responsavel_Class.cs",
-              "ToolTip": "C:\\Users\\Aula\\source\\repos\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Responsavel_Class.cs",
+              "ToolTip": "C:\\Users\\marce.DESKTOP-IFFUH4S\\OneDrive\\Documents\\gestao_de_tarefas_csharp\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Responsavel_Class.cs",
               "RelativeToolTip": "Projeto03_Gestao_De_Tarefas\\Responsavel_Class.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-25T23:14:04.775Z",
               "EditorCaption": ""
@@ -41,11 +75,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Aula\\source\\repos\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\marce.DESKTOP-IFFUH4S\\OneDrive\\Documents\\gestao_de_tarefas_csharp\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Program.cs",
               "RelativeDocumentMoniker": "Projeto03_Gestao_De_Tarefas\\Program.cs",
-              "ToolTip": "C:\\Users\\Aula\\source\\repos\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Program.cs",
+              "ToolTip": "C:\\Users\\marce.DESKTOP-IFFUH4S\\OneDrive\\Documents\\gestao_de_tarefas_csharp\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Program.cs",
               "RelativeToolTip": "Projeto03_Gestao_De_Tarefas\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAkwBwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-25T23:06:26.458Z",
               "EditorCaption": ""

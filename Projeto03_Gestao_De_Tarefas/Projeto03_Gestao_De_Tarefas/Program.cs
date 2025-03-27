@@ -1,11 +1,7 @@
-﻿namespace Projeto03_Gestao_De_Tarefas
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("To do list");
-            string Menu = @"
+﻿using Projeto03_Gestao_De_Tarefas;
+
+Console.WriteLine("To do list");
+string Menu = @"
 1 - Novo responsável
 2 - Nova tarefa
 3 - Excluir tarefa
@@ -18,21 +14,22 @@
 6.3 - Listar tarefas concluidas por responsável
 0 - Encerrar programa";
 
-            string opcao = "0";
+string opcao = "0";
 
-            do
-            {
-                Console.WriteLine(Menu);
-                opcao = Console.ReadLine();
+do
+{
+    Console.WriteLine(Menu);
+    opcao = Console.ReadLine();
 
-                switch (opcao)
-                {
-
-                }
-
-            } while (opcao != "0");
-        }
-
-        
+    switch (opcao)
+    {
+        case "1":
+            Responsavel objeto = Funcoes.instanciarResponsavel();
+            Listas.addListaResponsavel(objeto);
+            Listas.ExibirListaResponsavel();
+            break;
+        default:
+            Console.WriteLine("Teste"); break;
     }
-}
+
+} while (opcao != "0");
