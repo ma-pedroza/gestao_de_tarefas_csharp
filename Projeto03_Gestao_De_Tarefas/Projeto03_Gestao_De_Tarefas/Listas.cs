@@ -20,12 +20,11 @@ namespace Projeto03_Gestao_De_Tarefas
             Console.WriteLine("============================");
             Console.WriteLine("    Lista de Responsáveis    ");
             Console.WriteLine("============================");
-            Console.WriteLine("");
             foreach (Responsavel item in ListadeResponsavel)
             {
-                Console.WriteLine("============================");
                 Console.WriteLine($"Nome: {item.Nome}");
                 Console.WriteLine($"Email: {item.Email}");
+                Console.WriteLine("============================");
             }
         }
 
