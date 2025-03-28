@@ -42,6 +42,8 @@ namespace Projeto03_Gestao_De_Tarefas
             Console.WriteLine("============================");
             foreach (Tarefa item in ListadeTarefa)
             {
+                int index = ListadeTarefa.IndexOf(item);
+                Console.WriteLine($"Id: {index}");
                 Console.WriteLine($"Título: {item.Titulo}");
                 Console.WriteLine($"Data Limite: {item.DataLimite}");
                 Console.WriteLine($"Status: {item.statusTarefa}");

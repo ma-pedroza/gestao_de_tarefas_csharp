@@ -45,12 +45,25 @@ namespace Projeto03_Gestao_De_Tarefas
 
             while (!Enum.TryParse(prioridade, true, out Tarefa.Prioridade prioridadeEnum))
             {
-                Console.Write("Digite o status da tarefa - (Fazer - Andamento - Concluido):");
+                Console.Write("Digite a prioridade da tarefa - (Fazer - Andamento - Concluido):");
                 prioridade = Console.ReadLine();
             }
 
             Tarefa objeto = new Tarefa(titulo, data, statusEnum, prioridadeEnum);
             return objeto;
+        }
+        public static void excluirTarefa()
+        {
+            Console.Write("Digite o Id da tarefa que deseja excluir");
+            int id = Convert.ToInt32(Console.ReadLine());
+
+            for(int i = Listas.ListadeTarefa.Count - 1; i >= 0; i--)
+            {
+                if (i == )
+                {
+                    Listas.ListadeTarefa.RemoveAt(id);
+                }
+            }
         }
     }
 }

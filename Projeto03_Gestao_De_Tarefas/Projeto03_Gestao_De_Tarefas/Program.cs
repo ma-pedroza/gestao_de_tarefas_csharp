@@ -30,9 +30,12 @@ do
             break;
 
         case "2":
-            Tarefa objetoTarefa = Funcoes.instanciarTarefa(); // Itancia a classe Tarefa e guarda em variavel
+            Tarefa objetoTarefa = Funcoes.instanciarTarefa(); // Instancia a classe Tarefa e guarda em variavel
             Listas.addListaTarefa(objetoTarefa); // Adiciona a variavel(objetoTarefa) na lista de tarefas
             Listas.ExibirListaTarefa(); // Exibe a lista somente para teste
+            break;
+        case "3":
+            Funcoes.excluirTarefa();
             break;
 
         default:
