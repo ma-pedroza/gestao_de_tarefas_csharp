@@ -24,15 +24,15 @@ do
     switch (opcao)
     {
         case "1":
-            Responsavel objeto = Funcoes.instanciarResponsavel(); // Instacia a classe Responsavel e guarda em variavel
+            Responsavel objeto = Funcoes.instanciarResponsavel(); // Instancia a classe Responsavel e guarda em variavel
             Listas.addListaResponsavel(objeto); // Adiciona a variavel(objeto) na lista de responsáveis
             Listas.ExibirListaResponsavel(); // Exibe a lista somente para teste
             break;
 
         case "2":
-            Tarefa objetoTarefa = Funcoes.instanciarTarefa();
-            Listas.addListaTarefa(objetoTarefa);
-            Listas.ExibirListaTarefa();
+            Tarefa objetoTarefa = Funcoes.instanciarTarefa(); // Itancia a classe Tarefa e guarda em variavel
+            Listas.addListaTarefa(objetoTarefa); // Adiciona a variavel(objetoTarefa) na lista de tarefas
+            Listas.ExibirListaTarefa(); // Exibe a lista somente para teste
             break;
 
         default:
