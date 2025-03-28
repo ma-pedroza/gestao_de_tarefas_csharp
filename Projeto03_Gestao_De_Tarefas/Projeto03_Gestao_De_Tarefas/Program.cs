@@ -31,6 +31,8 @@ do
 
         case "2":
             Tarefa objetoTarefa = Funcoes.instanciarTarefa();
+            Listas.addListaTarefa(objetoTarefa);
+            Listas.ExibirListaTarefa();
             break;
 
         default:

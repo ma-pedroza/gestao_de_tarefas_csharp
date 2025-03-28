@@ -8,20 +8,32 @@ namespace Projeto03_Gestao_De_Tarefas
 {
     internal class Tarefa
     {
+        public enum Status
+        {
+            Fazer,
+            Andamento,
+            Concluido
+        }
+
+        public enum Prioridade
+        {
+            Alta,
+            Baixa,
+            Media
+        }
         public string Titulo { get; set; }
         public DateOnly DataLimite { get; set; }
-        public string Status { get; set; }
-        public string Prioridade { get; set; }
+        public Status statusTarefa { get; set; }
+        public Prioridade prioridadeTarefa { get; set; }
         public string Responsavel { get; set; }
 
-        public Tarefa(string Titulo, DateOnly DataLimite, string Status, string Prioridade)
+        public Tarefa(string Titulo, DateOnly DataLimite, Status status, Prioridade prioridade)
         {
             this.Titulo = Titulo;
             this.DataLimite = DataLimite;
-            this.Status = Status;
-            this.Prioridade = Prioridade;
+            this.statusTarefa = status;
+            this.prioridadeTarefa = prioridade;
+
         }
     }
-
-
 }
