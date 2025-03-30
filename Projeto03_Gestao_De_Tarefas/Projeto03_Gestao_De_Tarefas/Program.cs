@@ -32,12 +32,33 @@ do
         case "2":
             Tarefa objetoTarefa = Funcoes.instanciarTarefa(); // Instancia a classe Tarefa e guarda em variavel
             Listas.addListaTarefa(objetoTarefa); // Adiciona a variavel(objetoTarefa) na lista de tarefas
-            Listas.ExibirListaTarefa(); // Exibe a lista somente para teste
             break;
         case "3":
             Funcoes.excluirTarefa();
             break;
-
+        case "4":
+            Console.WriteLine();
+            break;
+        case "5.1":
+            if (Listas.ListadeTarefa.Count() == 0)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Nenhuma Tarefa foi criada.");
+            }
+            else
+            {
+                Console.WriteLine("Aqui está uma listagem de Tarefas");
+                Listas.ExibirListaTarefa();
+            }
+                
+            break;
+        case "5.2":
+            
+            break;
+        case "5.3":
+            Listas.ExibirListaTarefaConcluidas();
+            break;
+        
         default:
             Console.WriteLine("Digite uma opção válida"); break;
     }

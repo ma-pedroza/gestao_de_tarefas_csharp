@@ -27,13 +27,15 @@ namespace Projeto03_Gestao_De_Tarefas
         public Prioridade prioridadeTarefa { get; set; }
         public string Responsavel { get; set; }
 
-        public Tarefa(string Titulo, DateOnly DataLimite, Status status, Prioridade prioridade)
+        public Responsavel responsavel {get; set;}
+
+        public Tarefa(string Titulo, DateOnly DataLimite, Status status, Prioridade prioridade, Responsavel responsavel)
         {
             this.Titulo = Titulo;
             this.DataLimite = DataLimite;
             this.statusTarefa = status;
             this.prioridadeTarefa = prioridade;
-
+            this.responsavel = responsavel;
         }
     }
 }

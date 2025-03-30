@@ -25,6 +25,7 @@ namespace Projeto03_Gestao_De_Tarefas
 
         public static Tarefa instanciarTarefa()
         {
+            Console.WriteLine("");
             Console.Write("Digite o título da tarefa: ");
             string titulo = Console.ReadLine();
 
@@ -49,7 +50,32 @@ namespace Projeto03_Gestao_De_Tarefas
                 prioridade = Console.ReadLine();
             }
 
-            Tarefa objeto = new Tarefa(titulo, data, statusEnum, prioridadeEnum);
+            if (Listas.ListadeResponsavel.Count == 0)
+            {
+                Console.WriteLine("");
+                Console.WriteLine("Não existe um Responsável criado. É necessário ter um para associar a uma Tarefa.");
+                Responsavel objeto2 = instanciarResponsavel();
+                Listas.addListaResponsavel(objeto2);
+            }
+
+            Console.WriteLine("============================");
+            Console.WriteLine("    Lista de Responsáveis    ");
+            Console.WriteLine("============================");
+            foreach (Responsavel item in Listas.ListadeResponsavel)
+            {
+                int i = Listas.ListadeResponsavel.IndexOf(item);
+                Console.WriteLine($"Id:{i} - Nome: {item.Nome} ({item.Email})");
+                Console.WriteLine("============================");
+
+            }
+            Console.WriteLine($"Digite o Id do Responsável pela Tarefa: {titulo}");
+            Console.Write("Id: ");
+            int id = Convert.ToInt32(Console.ReadLine());
+
+            Responsavel responsavel = Listas.ListadeResponsavel[id];
+
+
+            Tarefa objeto = new Tarefa(titulo, data, statusEnum, prioridadeEnum, responsavel);
             return objeto;
         }
         public static void excluirTarefa()
@@ -57,12 +83,14 @@ namespace Projeto03_Gestao_De_Tarefas
             Console.Write("Digite o Id da tarefa que deseja excluir");
             int id = Convert.ToInt32(Console.ReadLine());
 
-            for(int i = Listas.ListadeTarefa.Count - 1; i >= 0; i--)
+            if (id <= 0 && id < Listas.ListadeTarefa.Count)
             {
-                if (i == )
-                {
-                    Listas.ListadeTarefa.RemoveAt(id);
-                }
+                Listas.ListadeTarefa.RemoveAt(id);
+                Console.WriteLine("Tarefa excluida.");
+            }
+            else
+            {
+                Console.WriteLine("Digite um Id válido. (Lembrando que os Id's são exibido em listagem.)");
             }
         }
     }
