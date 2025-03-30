@@ -12,13 +12,16 @@ string Menu = @"
 6.1 - Listar tarefas por responsável
 6.2 - Listar tarefas pendentes por responsável
 6.3 - Listar tarefas concluidas por responsável
-0 - Encerrar programa";
+0 - Encerrar programa
+";
 
 string opcao = "0";
 
 do
 {
     Console.WriteLine(Menu);
+    Console.WriteLine("Digite uma opção");
+    Console.Write(":");
     opcao = Console.ReadLine();
 
     switch (opcao)
@@ -37,7 +40,7 @@ do
             Funcoes.excluirTarefa();
             break;
         case "4":
-            Console.WriteLine();
+            Funcoes.AtualizarTarefa();
             break;
         case "5.1":
             if (Listas.ListadeTarefa.Count() == 0)

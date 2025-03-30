@@ -8,7 +8,7 @@ namespace Projeto03_Gestao_De_Tarefas
 {
     public class Responsavel
     {
-        public string Nome { get;}
+        public string Nome { get; set; }
 
         public string Email { get; set; }
 

@@ -32,22 +32,22 @@ namespace Projeto03_Gestao_De_Tarefas
         public static void ExibirListaResponsavel()
         {
             Console.WriteLine("");
-            Console.WriteLine("============================");
-            Console.WriteLine("    Lista de Responsáveis    ");
-            Console.WriteLine("============================");
+            Console.WriteLine("=======================================");
+            Console.WriteLine("          Lista de Responsáveis         ");
+            Console.WriteLine("=======================================");
             foreach (Responsavel item in ListadeResponsavel)
             {
                 Console.WriteLine($"Nome: {item.Nome}");
                 Console.WriteLine($"Email: {item.Email}");
-                Console.WriteLine("============================");
+                Console.WriteLine("=======================================");
             }
         }
         public static void ExibirListaTarefa()
         {
             Console.WriteLine("");
-            Console.WriteLine("============================");
-            Console.WriteLine("    Lista de Tarefa    ");
-            Console.WriteLine("============================");
+            Console.WriteLine("=======================================");
+            Console.WriteLine("            Lista de Tarefa            ");
+            Console.WriteLine("=======================================");
             foreach (Tarefa item in ListadeTarefa)
             {
                 int index = ListadeTarefa.IndexOf(item);
@@ -57,7 +57,7 @@ namespace Projeto03_Gestao_De_Tarefas
                 Console.WriteLine($"Status: {item.statusTarefa}");
                 Console.WriteLine($"Prioridade: {item.prioridadeTarefa}");
                 Console.WriteLine($"Responsável: {item.responsavel.Nome} ({item.responsavel.Email})");
-                Console.WriteLine("============================");
+                Console.WriteLine("=======================================");
             }
         }
         public static void ExibirListaTarefaConcluidas()
@@ -71,9 +71,9 @@ namespace Projeto03_Gestao_De_Tarefas
                 }
             }
             Console.WriteLine("");
-            Console.WriteLine("================================");
-            Console.WriteLine("    Lista de Tarefas Concluidas   ");
-            Console.WriteLine("================================");
+            Console.WriteLine("=======================================");
+            Console.WriteLine("      Lista de Tarefas Concluidas   ");
+            Console.WriteLine("=======================================");
             foreach (Tarefa item in ListadeTarefasConcluida)
             {
                 int index = ListadeTarefasConcluida.IndexOf(item);
@@ -83,7 +83,7 @@ namespace Projeto03_Gestao_De_Tarefas
                 Console.WriteLine($"Status: {item.statusTarefa}");
                 Console.WriteLine($"Prioridade: {item.prioridadeTarefa}");
                 Console.WriteLine($"Responsável: {item.responsavel.Nome} ({item.responsavel.Email})");
-                Console.WriteLine("============================");
+                Console.WriteLine("=======================================");
             }
         }
 
@@ -99,21 +99,21 @@ namespace Projeto03_Gestao_De_Tarefas
                     }
                 }
                 Console.WriteLine("");
-                Console.WriteLine("=================================");
-                Console.WriteLine("    Lista de Tarefas Pendentes   ");
-                Console.WriteLine("=================================");
+                Console.WriteLine("=======================================");
+                Console.WriteLine("       Lista de Tarefas Pendentes   ");
+                Console.WriteLine("=======================================");
                 foreach (Tarefa item in ListadeTarefasPendentes)
-                {
-                    int index = ListadeTarefa.IndexOf(item);
-                    Console.WriteLine($"Id: {index}");
-                    Console.WriteLine($"Título: {item.Titulo}");
-                    Console.WriteLine($"Data Limite: {item.DataLimite}");
-                    Console.WriteLine($"Status: {item.statusTarefa}");
-                    Console.WriteLine($"Prioridade: {item.prioridadeTarefa}");
-                    Console.WriteLine($"Responsável: {item.responsavel.Nome} ({item.responsavel.Email})");
-                    Console.WriteLine("============================");
-                }
+                    {
+                        int index = ListadeTarefa.IndexOf(item);
+                        Console.WriteLine($"Id: {index}");
+                        Console.WriteLine($"Título: {item.Titulo}");
+                        Console.WriteLine($"Data Limite: {item.DataLimite}");
+                        Console.WriteLine($"Status: {item.statusTarefa}");
+                        Console.WriteLine($"Prioridade: {item.prioridadeTarefa}");
+                        Console.WriteLine($"Responsável: {item.responsavel.Nome} ({item.responsavel.Email})");
+                        Console.WriteLine("=======================================");
             }
+                }
         }
 
 }
