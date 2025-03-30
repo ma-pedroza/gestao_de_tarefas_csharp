@@ -17,9 +17,9 @@ namespace Projeto03_Gestao_De_Tarefas
 
         public enum Prioridade
         {
-            Alta,
             Baixa,
-            Media
+            Media,
+            Alta
         }
         public string Titulo { get; set; }
         public DateOnly DataLimite { get; set; }

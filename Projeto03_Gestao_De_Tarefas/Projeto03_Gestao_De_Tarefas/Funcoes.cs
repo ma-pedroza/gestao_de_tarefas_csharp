@@ -40,15 +40,17 @@ namespace Projeto03_Gestao_De_Tarefas
                 Console.Write("Digite o status da tarefa - (Fazer - Andamento - Concluido):");
                 status = Console.ReadLine();
             }
+            Tarefa.Status statusFinal = (Tarefa.Status)Enum.Parse(typeof(Tarefa.Status), status, true);
 
-            Console.Write("Digite a prioridade da tarefa - (Baixa - Media - Alta):");
+            Console.Write("Digite a prioridade da tarefa - (Baixa - Média - Alta):");
             string prioridade = Console.ReadLine();
 
             while (!Enum.TryParse(prioridade, true, out Tarefa.Prioridade prioridadeEnum))
             {
-                Console.Write("Digite a prioridade da tarefa - (Fazer - Andamento - Concluido):");
+                Console.Write("Digite a prioridade da tarefa - (Baixa - Média - Alta):");
                 prioridade = Console.ReadLine();
             }
+            Tarefa.Prioridade prioridadeFinal = (Tarefa.Prioridade)Enum.Parse(typeof(Tarefa.Prioridade), prioridade, true);
 
             if (Listas.ListadeResponsavel.Count == 0)
             {
@@ -75,7 +77,7 @@ namespace Projeto03_Gestao_De_Tarefas
             Responsavel responsavel = Listas.ListadeResponsavel[id];
 
 
-            Tarefa objeto = new Tarefa(titulo, data, statusEnum, prioridadeEnum, responsavel);
+            Tarefa objeto = new Tarefa(titulo, data, statusFinal, prioridadeFinal, responsavel);
             return objeto;
         }
         public static void excluirTarefa()

@@ -14,6 +14,8 @@ namespace Projeto03_Gestao_De_Tarefas
 
         public static List<Tarefa> ListadeTarefasConcluida = new List<Tarefa>();
 
+        public static List<Tarefa> ListadeTarefasPendentes = new List<Tarefa>();
+
 
 
 
@@ -60,24 +62,47 @@ namespace Projeto03_Gestao_De_Tarefas
         }
         public static void ExibirListaTarefaConcluidas()
         {
-            if (ListadeTarefa.Count == 0)
+            ListadeTarefasConcluida.Clear();
+            foreach (Tarefa item in ListadeTarefa)
             {
-                Console.WriteLine("Nenhuma Tarefa foi criada ainda.");
+                if (item.statusTarefa == Tarefa.Status.Concluido)
+                {
+                    ListadeTarefasConcluida.Add(item);
+                }
             }
-            else
+            Console.WriteLine("");
+            Console.WriteLine("================================");
+            Console.WriteLine("    Lista de Tarefas Concluidas   ");
+            Console.WriteLine("================================");
+            foreach (Tarefa item in ListadeTarefasConcluida)
             {
+                int index = ListadeTarefasConcluida.IndexOf(item);
+                Console.WriteLine($"Id: {index}");
+                Console.WriteLine($"Título: {item.Titulo}");
+                Console.WriteLine($"Data Limite: {item.DataLimite}");
+                Console.WriteLine($"Status: {item.statusTarefa}");
+                Console.WriteLine($"Prioridade: {item.prioridadeTarefa}");
+                Console.WriteLine($"Responsável: {item.responsavel.Nome} ({item.responsavel.Email})");
+                Console.WriteLine("============================");
+            }
+        }
+
+        
+        public static void ExibirListaTarefasPendentes()
+        {
+            ListadeTarefasPendentes.Clear();
                 foreach (Tarefa item in ListadeTarefa)
                 {
-                    if (item.statusTarefa == Tarefa.Status.Concluido)
+                    if (item.statusTarefa == Tarefa.Status.Fazer || item.statusTarefa == Tarefa.Status.Andamento)
                     {
-                        ListadeTarefasConcluida.Add(item);
+                        ListadeTarefasPendentes.Add(item);
                     }
                 }
                 Console.WriteLine("");
-                Console.WriteLine("================================");
-                Console.WriteLine("    Lista de Tarefas Concluidas   ");
-                Console.WriteLine("================================");
-                foreach (Tarefa item in ListadeTarefa)
+                Console.WriteLine("=================================");
+                Console.WriteLine("    Lista de Tarefas Pendentes   ");
+                Console.WriteLine("=================================");
+                foreach (Tarefa item in ListadeTarefasPendentes)
                 {
                     int index = ListadeTarefa.IndexOf(item);
                     Console.WriteLine($"Id: {index}");
@@ -88,9 +113,9 @@ namespace Projeto03_Gestao_De_Tarefas
                     Console.WriteLine($"Responsável: {item.responsavel.Nome} ({item.responsavel.Email})");
                     Console.WriteLine("============================");
                 }
-            }                
+            }
         }
 
-    }
-
 }
+
+
