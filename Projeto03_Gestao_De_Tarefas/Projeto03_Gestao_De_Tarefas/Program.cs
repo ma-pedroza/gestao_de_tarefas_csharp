@@ -69,7 +69,9 @@ do
         case "5.3":
             Listas.ExibirListaTarefaConcluidas();
             break;
-        
+        case "6.1":
+            Listas.ExibirTarefasPorResponsavel();
+            break;
         default:
             Console.WriteLine("Digite uma opção válida"); break;
     }
