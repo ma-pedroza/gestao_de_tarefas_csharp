@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Projeto03_Gestao_De_Tarefas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca9fb345d9deaaa978c2cd0115472bc7fb14b191")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77ec680377f486c25f8b85494268c812f975c835")]
 [assembly: System.Reflection.AssemblyProductAttribute("Projeto03_Gestao_De_Tarefas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Projeto03_Gestao_De_Tarefas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

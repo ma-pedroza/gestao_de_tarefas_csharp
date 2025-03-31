@@ -19,6 +19,8 @@ namespace Projeto03_Gestao_De_Tarefas
 
         public static List<Tarefa> ListadeTarefasPorResponsavel = new List<Tarefa>();
 
+        public static List<Tarefa> ListaTarefaPendenteResponsavel = new List<Tarefa>();
+
 
 
         public static void addListaResponsavel(Responsavel objeto)
@@ -156,6 +158,40 @@ namespace Projeto03_Gestao_De_Tarefas
             }
 
         }
+        public static void ExibirTarefasPendentesResponsavel()
+        {
+            ExibirListaResponsavel();
+            Console.WriteLine("Escolha o responsável indicando seu email: ");
+            string email = Console.ReadLine();
+
+            foreach (Tarefa Item in ListadeTarefa)
+            {
+                if (Item.responsavel.Email == email && Item.statusTarefa == Tarefa.Status.Fazer || Item.statusTarefa == Tarefa.Status.Andamento)
+                {
+                    ListaTarefaPendenteResponsavel.Add(Item);
+                }
+
+
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("================================================================");
+            Console.WriteLine("            Lista de Tarefa Pendentes por Responsável           ");
+            Console.WriteLine("================================================================");
+            foreach (Tarefa item in ListaTarefaPendenteResponsavel)
+            {
+                int index = ListadeTarefa.IndexOf(item);
+                Console.WriteLine($"Id: {index}");
+                Console.WriteLine($"Título: {item.Titulo}");
+                Console.WriteLine($"Data Limite: {item.DataLimite}");
+                Console.WriteLine($"Status: {item.statusTarefa}");
+                Console.WriteLine($"Prioridade: {item.prioridadeTarefa}");
+                Console.WriteLine($"Responsável: {item.responsavel.Nome} ({item.responsavel.Email})");
+                Console.WriteLine("=======================================");
+            }
+
+        }
+
     }
 }
 
