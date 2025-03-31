@@ -13,6 +13,7 @@ string Menu = @"
 6.2 - Listar tarefas pendentes por responsável
 6.3 - Listar tarefas concluidas por responsável
 0 - Encerrar programa
+0.1 - Seed
 ";
 
 string opcao = "0";
@@ -71,6 +72,9 @@ do
             break;
         case "6.1":
             Listas.ExibirTarefasPorResponsavel();
+            break;
+        case "0.1":
+            SeedData.Seed();
             break;
         default:
             Console.WriteLine("Digite uma opção válida"); break;
