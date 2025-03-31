@@ -73,6 +73,9 @@ do
         case "6.1":
             Listas.ExibirTarefasPorResponsavel();
             break;
+        case "6.2":
+            Listas.ExibirTarefasPendentesResponsavel();
+            break;
         case "0.1":
             SeedData.Seed();
             break;
