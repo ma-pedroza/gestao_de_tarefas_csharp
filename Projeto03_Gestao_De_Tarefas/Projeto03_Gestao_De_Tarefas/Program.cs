@@ -37,12 +37,15 @@ do
             Tarefa objetoTarefa = Funcoes.instanciarTarefa(); // Instancia a classe Tarefa e guarda em variavel
             Listas.addListaTarefa(objetoTarefa); // Adiciona a variavel(objetoTarefa) na lista de tarefas
             break;
+
         case "3":
             Funcoes.excluirTarefa();
             break;
+
         case "4":
             Funcoes.AtualizarTarefa();
             break;
+
         case "5.1":
             if (Listas.ListadeTarefa.Count() == 0)
             {
@@ -55,6 +58,7 @@ do
                 Listas.ExibirListaTarefa();
             }
             break;
+
         case "5.2":
             if (Listas.ListadeTarefa.Count() == 0)
             {
@@ -67,18 +71,23 @@ do
                 Listas.ExibirListaTarefasPendentes();
             }
             break;
+
         case "5.3":
             Listas.ExibirListaTarefaConcluidas();
             break;
+
         case "6.1":
             Listas.ExibirTarefasPorResponsavel();
             break;
+
         case "6.2":
             Listas.ExibirTarefasPendentesResponsavel();
             break;
+
         case "0.1":
             SeedData.Seed();
             break;
+
         default:
             Console.WriteLine("Digite uma opção válida"); break;
     }

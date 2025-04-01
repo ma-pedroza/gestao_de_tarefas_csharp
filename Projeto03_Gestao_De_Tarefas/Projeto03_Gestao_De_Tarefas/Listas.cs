@@ -166,7 +166,7 @@ namespace Projeto03_Gestao_De_Tarefas
 
             foreach (Tarefa Item in ListadeTarefa)
             {
-                if (Item.responsavel.Email == email && Item.statusTarefa == Tarefa.Status.Fazer || Item.statusTarefa == Tarefa.Status.Andamento)
+                if (Item.responsavel.Email == email && (Item.statusTarefa == Tarefa.Status.Fazer || Item.statusTarefa == Tarefa.Status.Andamento))
                 {
                     ListaTarefasPendentesResponsavel.Add(Item);
                 }
