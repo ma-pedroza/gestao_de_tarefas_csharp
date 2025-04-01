@@ -19,7 +19,7 @@ namespace Projeto03_Gestao_De_Tarefas
 
         public static List<Tarefa> ListadeTarefasPorResponsavel = new List<Tarefa>();
 
-        public static List<Tarefa> ListaTarefaPendenteResponsavel = new List<Tarefa>();
+        public static List <Tarefa> ListaTarefasPendentesResponsavel = new List<Tarefa>();
 
 
 
@@ -168,7 +168,7 @@ namespace Projeto03_Gestao_De_Tarefas
             {
                 if (Item.responsavel.Email == email && Item.statusTarefa == Tarefa.Status.Fazer || Item.statusTarefa == Tarefa.Status.Andamento)
                 {
-                    ListaTarefaPendenteResponsavel.Add(Item);
+                    ListaTarefasPendentesResponsavel.Add(Item);
                 }
 
 
@@ -178,7 +178,7 @@ namespace Projeto03_Gestao_De_Tarefas
             Console.WriteLine("================================================================");
             Console.WriteLine("            Lista de Tarefa Pendentes por Responsável           ");
             Console.WriteLine("================================================================");
-            foreach (Tarefa item in ListaTarefaPendenteResponsavel)
+            foreach (Tarefa item in ListaTarefasPendentesResponsavel)
             {
                 int index = ListadeTarefa.IndexOf(item);
                 Console.WriteLine($"Id: {index}");
