@@ -17,8 +17,37 @@ namespace Projeto03_Gestao_De_Tarefas
             Console.WriteLine("");
             Console.Write("Digite o nome do responsável: ");
             string nome = Console.ReadLine();
+
+            while (nome == "" || nome == null)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Nome de Responsável inválido. Digite ao menos um caracter");
+                Console.Write("Digite novamente o nome do responsável: ");
+                nome = Console.ReadLine();
+            }
+
             Console.Write("Digite o email: ");
             string email = Console.ReadLine();
+
+            while (email.IndexOf("@") == -1)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Você digitou um Email inválido. Deve conter um '@'");
+                Console.Write("Digite novamente um email: ");
+                email = Console.ReadLine();
+            }
+
+            foreach(Responsavel item in Listas.ListadeResponsavel)
+            {
+                while(email == item.Email)
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("Email já existente. Por favor insira outro Email");
+                    Console.Write("Digite novamente um email: ");
+                    email = Console.ReadLine();
+                }
+            }
+
 
             Responsavel objeto = new Responsavel(nome, email);
             return objeto;
@@ -30,14 +59,51 @@ namespace Projeto03_Gestao_De_Tarefas
             Console.Write("Digite o título da tarefa: ");
             string titulo = Console.ReadLine();
 
+            while (titulo == "" || titulo == null) {
+                Console.WriteLine();
+                Console.WriteLine("Título inválido. Digite ao menos um caracter");
+                Console.Write("Digite o título da tarefa: ");
+                titulo = Console.ReadLine();
+            }
+
             Console.Write("Digite a data limite - (formato dd/mm/yyyy): ");
-            DateOnly data = DateOnly.Parse(Console.ReadLine());
+            string dataTexto = Console.ReadLine();
+            DateOnly data;
+
+            while (!DateOnly.TryParse(dataTexto, out data))
+            {
+                Console.WriteLine();
+                Console.WriteLine("Data inválida. Por favor digite uma data válida - Necessário conter '/' ");
+                Console.Write("Formato - dd/mm/yyyy : ");
+                dataTexto = Console.ReadLine();
+            }
+
+            DateOnly hoje = DateOnly.FromDateTime(DateTime.Now);
+
+            while(data < hoje)
+            {
+                Console.WriteLine();
+                Console.WriteLine("A Data não pode ser menor que a Data atual.");
+                Console.Write("Digite a data limite - (formato dd/mm/yyyy): ");
+                dataTexto = Console.ReadLine();
+                while (!DateOnly.TryParse(dataTexto, out data))
+                {
+                    Console.WriteLine();
+                    Console.WriteLine("Data inválida. Por favor digite uma data válida - Necessário conter '/' ");
+                    Console.Write("Formato - dd/mm/yyyy : ");
+                    dataTexto = Console.ReadLine();
+                }
+            }
+
 
             Console.Write("Digite o status da tarefa - (Fazer - Andamento - Concluido): ");
             string status = Console.ReadLine();
 
             while (!Enum.TryParse(status, true, out Tarefa.Status statusEnum))
             {
+                Console.WriteLine();
+                Console.WriteLine("Digite uma opção válida.");
+                Console.WriteLine();
                 Console.Write("Digite o status da tarefa - (Fazer - Andamento - Concluido): ");
                 status = Console.ReadLine();
             }
@@ -48,6 +114,9 @@ namespace Projeto03_Gestao_De_Tarefas
 
             while (!Enum.TryParse(prioridade, true, out Tarefa.Prioridade prioridadeEnum))
             {
+                Console.WriteLine();
+                Console.WriteLine("Digite uma opção válida.");
+                Console.WriteLine();
                 Console.Write("Digite a prioridade da tarefa - (Baixa - Média - Alta): ");
                 prioridade = Console.ReadLine();
             }
@@ -85,10 +154,12 @@ namespace Projeto03_Gestao_De_Tarefas
         }
         public static void excluirTarefa()
         {
-            Console.Write("Digite o Id da tarefa que deseja excluir");
+            Listas.ExibirListaTarefa();
+            Console.WriteLine();
+            Console.Write("Digite o Id da tarefa que deseja excluir: ");
             int id = Convert.ToInt32(Console.ReadLine());
 
-            if (id <= 0 && id < Listas.ListadeTarefa.Count)
+            if (id >= 0 && id < Listas.ListadeTarefa.Count)
             {
                 Listas.ListadeTarefa.RemoveAt(id);
                 Console.WriteLine("Tarefa excluida.");
