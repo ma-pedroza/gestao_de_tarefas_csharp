@@ -84,6 +84,10 @@ do
             Listas.ExibirTarefasPendentesResponsavel();
             break;
 
+        case "6.3":
+            Listas.ExibirTarefasConcluidasResponsavel();
+            break;
+
         case "0.1":
             SeedData.Seed();
             break;

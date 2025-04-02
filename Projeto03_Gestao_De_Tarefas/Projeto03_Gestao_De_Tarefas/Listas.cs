@@ -159,24 +159,22 @@ namespace Projeto03_Gestao_De_Tarefas
 
             int id = Convert.ToInt32(Console.ReadLine());
 
-            List<Tarefa> ListadeTarefasPorResponsavel = new List<Tarefa>();
-
             Responsavel responsavelParaBusca = Listas.ListadeResponsavel[id];
 
             foreach (Tarefa item in ListadeTarefa)
             {
                 if ((item.responsavel.Email == responsavelParaBusca.Email) && (item.statusTarefa == Tarefa.Status.Fazer || item.statusTarefa == Tarefa.Status.Andamento))
                 {
-                    ListadeTarefasPorResponsavel.Add(item);
+                    ListaTarefasPendentesResponsavel.Add(item);
                 }
             }
             Console.WriteLine("");
             Console.WriteLine("=======================================");
             Console.WriteLine($"      Lista de Tarefas de Pendentes de: {responsavelParaBusca.Nome}   ");
             Console.WriteLine("=======================================");
-            foreach (Tarefa item in ListadeTarefasPorResponsavel)
+            foreach (Tarefa item in ListaTarefasPendentesResponsavel)
             {
-                int index = ListadeTarefasPorResponsavel.IndexOf(item);
+                int index = ListaTarefasPendentesResponsavel.IndexOf(item);
                 Console.WriteLine($"Id: {index}");
                 Console.WriteLine($"Título: {item.Titulo}");
                 Console.WriteLine($"Data Limite: {item.DataLimite}");
@@ -186,6 +184,42 @@ namespace Projeto03_Gestao_De_Tarefas
                 Console.WriteLine("=======================================");
             }
 
+        }
+
+        public static void ExibirTarefasConcluidasResponsavel()
+        {
+            List<Tarefa> ListaTarefasConcluidasResponsavel = new List<Tarefa>();
+
+            Console.WriteLine("Escolha um responsável abaixo:");
+            Listas.ExibirListaResponsavel();
+            Console.Write("Digite o id: ");
+
+            int id = Convert.ToInt32(Console.ReadLine());
+
+            Responsavel responsavelParaBusca = Listas.ListadeResponsavel[id];
+
+            foreach(Tarefa item in Listas.ListadeTarefa)
+            {
+                if((item.responsavel.Email == responsavelParaBusca.Email) && (item.statusTarefa == Tarefa.Status.Concluido))
+                {
+                    ListaTarefasConcluidasResponsavel.Add(item);
+                }
+            }
+            Console.WriteLine("");
+            Console.WriteLine("=======================================");
+            Console.WriteLine($"      Lista de Tarefas de Concluidas de: {responsavelParaBusca.Nome}   ");
+            Console.WriteLine("=======================================");
+            foreach (Tarefa item in ListaTarefasConcluidasResponsavel)
+            {
+                int index = ListaTarefasConcluidasResponsavel.IndexOf(item);
+                Console.WriteLine($"Id: {index}");
+                Console.WriteLine($"Título: {item.Titulo}");
+                Console.WriteLine($"Data Limite: {item.DataLimite}");
+                Console.WriteLine($"Status: {item.statusTarefa}");
+                Console.WriteLine($"Prioridade: {item.prioridadeTarefa}");
+                Console.WriteLine($"Responsável: {item.responsavel.Nome} ({item.responsavel.Email})");
+                Console.WriteLine("=======================================");
+            }
         }
 
     }
