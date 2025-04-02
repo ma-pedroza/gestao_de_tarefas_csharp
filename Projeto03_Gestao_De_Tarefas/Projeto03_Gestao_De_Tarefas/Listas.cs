@@ -39,21 +39,31 @@ namespace Projeto03_Gestao_De_Tarefas
         }
         public static void ExibirListaTarefa()
         {
-            Console.WriteLine("");
-            Console.WriteLine("=======================================");
-            Console.WriteLine("            Lista de Tarefa            ");
-            Console.WriteLine("=======================================");
-            foreach (Tarefa item in ListadeTarefa)
+            if(ListadeTarefa.Count == 0)
             {
-                int index = ListadeTarefa.IndexOf(item);
-                Console.WriteLine($"Id: {index}");
-                Console.WriteLine($"Título: {item.Titulo}");
-                Console.WriteLine($"Data Limite: {item.DataLimite}");
-                Console.WriteLine($"Status: {item.statusTarefa}");
-                Console.WriteLine($"Prioridade: {item.prioridadeTarefa}");
-                Console.WriteLine($"Responsável: {item.responsavel.Nome} ({item.responsavel.Email})");
+                Console.WriteLine("=======================================");
+                Console.WriteLine("       Não há Tarefas criadas ainda.      ");
                 Console.WriteLine("=======================================");
             }
+            else
+            {
+                Console.WriteLine("");
+                Console.WriteLine("=======================================");
+                Console.WriteLine("            Lista de Tarefa            ");
+                Console.WriteLine("=======================================");
+                foreach (Tarefa item in ListadeTarefa)
+                {
+                    int index = ListadeTarefa.IndexOf(item);
+                    Console.WriteLine($"Id: {index}");
+                    Console.WriteLine($"Título: {item.Titulo}");
+                    Console.WriteLine($"Data Limite: {item.DataLimite}");
+                    Console.WriteLine($"Status: {item.statusTarefa}");
+                    Console.WriteLine($"Prioridade: {item.prioridadeTarefa}");
+                    Console.WriteLine($"Responsável: {item.responsavel.Nome} ({item.responsavel.Email})");
+                    Console.WriteLine("=======================================");
+                }
+            }
+            
         }
         public static void ExibirListaTarefaConcluidas()
         {

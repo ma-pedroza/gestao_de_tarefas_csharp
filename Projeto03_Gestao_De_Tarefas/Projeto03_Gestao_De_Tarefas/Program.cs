@@ -47,16 +47,7 @@ do
             break;
 
         case "5.1":
-            if (Listas.ListadeTarefa.Count() == 0)
-            {
-                Console.WriteLine();
-                Console.WriteLine("Nenhuma Tarefa foi criada.");
-            }
-            else
-            {
-                Console.WriteLine("Aqui está uma listagem de Tarefas");
-                Listas.ExibirListaTarefa();
-            }
+            Listas.ExibirListaTarefa();
             break;
 
         case "5.2":

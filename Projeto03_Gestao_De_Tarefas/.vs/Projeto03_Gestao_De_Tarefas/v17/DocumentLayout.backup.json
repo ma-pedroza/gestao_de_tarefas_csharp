@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|solutionrelative:projeto03_gestao_de_tarefas\\listas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|c:\\users\\aula\\documents\\github\\gestao_de_tarefas_csharp\\projeto03_gestao_de_tarefas\\projeto03_gestao_de_tarefas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|solutionrelative:projeto03_gestao_de_tarefas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|c:\\users\\aula\\documents\\github\\gestao_de_tarefas_csharp\\projeto03_gestao_de_tarefas\\projeto03_gestao_de_tarefas\\tarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|solutionrelative:projeto03_gestao_de_tarefas\\tarefa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|c:\\users\\aula\\documents\\github\\gestao_de_tarefas_csharp\\projeto03_gestao_de_tarefas\\projeto03_gestao_de_tarefas\\responsavel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|solutionrelative:projeto03_gestao_de_tarefas\\responsavel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|c:\\users\\aula\\documents\\github\\gestao_de_tarefas_csharp\\projeto03_gestao_de_tarefas\\projeto03_gestao_de_tarefas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D8F33D3-2136-493B-AFB6-21588FB076DC}|Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas.csproj|solutionrelative:projeto03_gestao_de_tarefas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Tarefa.cs",
               "DocumentMoniker": "C:\\Users\\Aula\\Documents\\GitHub\\gestao_de_tarefas_csharp\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Tarefa.cs",
               "RelativeDocumentMoniker": "Projeto03_Gestao_De_Tarefas\\Tarefa.cs",
@@ -51,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Funcoes.cs",
               "DocumentMoniker": "C:\\Users\\Aula\\Documents\\GitHub\\gestao_de_tarefas_csharp\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Funcoes.cs",
               "RelativeDocumentMoniker": "Projeto03_Gestao_De_Tarefas\\Funcoes.cs",
               "ToolTip": "C:\\Users\\Aula\\Documents\\GitHub\\gestao_de_tarefas_csharp\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Funcoes.cs",
               "RelativeToolTip": "Projeto03_Gestao_De_Tarefas\\Funcoes.cs",
-              "ViewState": "AgIAAMkAAAAAAAAAAAAgwKEAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAALYAAAAAAAAAAAAgwMQAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T22:34:21.732Z",
               "EditorCaption": ""
@@ -70,14 +70,14 @@
               "RelativeDocumentMoniker": "Projeto03_Gestao_De_Tarefas\\Listas.cs",
               "ToolTip": "C:\\Users\\Aula\\Documents\\GitHub\\gestao_de_tarefas_csharp\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Listas.cs",
               "RelativeToolTip": "Projeto03_Gestao_De_Tarefas\\Listas.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAAwLIAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAwwC4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T22:08:44.921Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Responsavel.cs",
               "DocumentMoniker": "C:\\Users\\Aula\\Documents\\GitHub\\gestao_de_tarefas_csharp\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Responsavel.cs",
               "RelativeDocumentMoniker": "Projeto03_Gestao_De_Tarefas\\Responsavel.cs",
@@ -90,13 +90,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Aula\\Documents\\GitHub\\gestao_de_tarefas_csharp\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Program.cs",
               "RelativeDocumentMoniker": "Projeto03_Gestao_De_Tarefas\\Program.cs",
               "ToolTip": "C:\\Users\\Aula\\Documents\\GitHub\\gestao_de_tarefas_csharp\\Projeto03_Gestao_De_Tarefas\\Projeto03_Gestao_De_Tarefas\\Program.cs",
               "RelativeToolTip": "Projeto03_Gestao_De_Tarefas\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-25T23:06:26.458Z",
               "EditorCaption": ""
