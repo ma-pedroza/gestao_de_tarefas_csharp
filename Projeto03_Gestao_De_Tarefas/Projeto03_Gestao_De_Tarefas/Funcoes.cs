@@ -144,7 +144,29 @@ namespace Projeto03_Gestao_De_Tarefas
             Console.WriteLine("");
             Console.WriteLine($"Digite o Id do Responsável pela Tarefa: {titulo}");
             Console.Write("Id: ");
-            int id = Convert.ToInt32(Console.ReadLine());
+
+            
+            bool cond = false;
+            int id = -1;
+            while (cond != true)
+            {
+                Console.WriteLine("Digite o Id do Responsável pela Tarefa: ");
+                Console.Write("Id: ");
+                id = Convert.ToInt32(Console.ReadLine());
+
+                if (id < 0 || id > (Listas.ListadeResponsavel.Count) - 1)
+                {
+                    Console.WriteLine("Opção inválida! - Escolha um ID existente");
+                    cond = false;
+                }
+
+                else if (id >= 0 && id <= (Listas.ListadeResponsavel.Count) - 1)
+                {
+                    cond = true;
+                    
+                }
+            }
+            
 
             Responsavel responsavel = Listas.ListadeResponsavel[id];
 
