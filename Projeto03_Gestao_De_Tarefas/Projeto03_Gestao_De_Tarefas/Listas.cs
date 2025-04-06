@@ -127,9 +127,28 @@ namespace Projeto03_Gestao_De_Tarefas
         {
             Console.WriteLine("Escolha um responsável abaixo:");
             Listas.ExibirListaResponsavel();
-            Console.Write("Digite o id: ");
+            
 
-            int id = Convert.ToInt32(Console.ReadLine());
+            bool cond = false;
+            int id = -1;
+            while (cond != true)
+            {
+                Console.Write("Digite o id: ");
+                Console.Write("Id: ");
+                id = Convert.ToInt32(Console.ReadLine());
+
+                if (id < 0 || id > (Listas.ListadeResponsavel.Count) - 1)
+                {
+                    Console.WriteLine("Opção inválida! - Escolha um ID existente");
+                    cond = false;
+                }
+
+                else if (id >= 0 && id <= (Listas.ListadeResponsavel.Count) - 1)
+                {
+                    cond = true;
+
+                }
+            }
 
             List<Tarefa> ListadeTarefasPorResponsavel = new List<Tarefa>();
 
@@ -165,9 +184,27 @@ namespace Projeto03_Gestao_De_Tarefas
 
             Console.WriteLine("Escolha um responsável abaixo:");
             Listas.ExibirListaResponsavel();
-            Console.Write("Digite o id: ");
 
-            int id = Convert.ToInt32(Console.ReadLine());
+            bool cond = false;
+            int id = -1;
+            while (cond != true)
+            {
+                Console.Write("Digite o id: ");
+                Console.Write("Id: ");
+                id = Convert.ToInt32(Console.ReadLine());
+
+                if (id < 0 || id > (Listas.ListadeResponsavel.Count) - 1)
+                {
+                    Console.WriteLine("Opção inválida! - Escolha um ID existente");
+                    cond = false;
+                }
+
+                else if (id >= 0 && id <= (Listas.ListadeResponsavel.Count) - 1)
+                {
+                    cond = true;
+
+                }
+            }
 
             Responsavel responsavelParaBusca = Listas.ListadeResponsavel[id];
 
@@ -202,9 +239,27 @@ namespace Projeto03_Gestao_De_Tarefas
 
             Console.WriteLine("Escolha um responsável abaixo:");
             Listas.ExibirListaResponsavel();
-            Console.Write("Digite o id: ");
 
-            int id = Convert.ToInt32(Console.ReadLine());
+            bool cond = false;
+            int id = -1;
+            while (cond != true)
+            {
+                Console.Write("Digite o id: ");
+                Console.Write("Id: ");
+                id = Convert.ToInt32(Console.ReadLine());
+
+                if (id < 0 || id > (Listas.ListadeResponsavel.Count) - 1)
+                {
+                    Console.WriteLine("Opção inválida! - Escolha um ID existente");
+                    cond = false;
+                }
+
+                else if (id >= 0 && id <= (Listas.ListadeResponsavel.Count) - 1)
+                {
+                    cond = true;
+
+                }
+            }
 
             Responsavel responsavelParaBusca = Listas.ListadeResponsavel[id];
 
