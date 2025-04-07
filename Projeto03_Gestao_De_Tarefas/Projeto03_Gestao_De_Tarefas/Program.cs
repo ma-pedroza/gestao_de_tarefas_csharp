@@ -30,7 +30,6 @@ do
         case "1":
             Responsavel objeto = Funcoes.instanciarResponsavel(); // Instancia a classe Responsavel e guarda em variavel
             Listas.addListaResponsavel(objeto); // Adiciona a variavel(objeto) na lista de responsáveis
-            Listas.ExibirListaResponsavel(); // Exibe a lista somente para teste
             break;
 
         case "2":
@@ -51,16 +50,7 @@ do
             break;
 
         case "5.2":
-            if (Listas.ListadeTarefa.Count() == 0)
-            {
-                Console.WriteLine();
-                Console.WriteLine("Nenhuma Tarefa foi criada.");
-            }
-            else
-            {
-                Console.WriteLine("Aqui está uma listagem de Tarefas Pendentes");
                 Listas.ExibirListaTarefasPendentes();
-            }
             break;
 
         case "5.3":
