@@ -78,7 +78,7 @@ namespace Projeto03_Gestao_De_Tarefas
             }
             Console.WriteLine("");
             Console.WriteLine("=======================================");
-            Console.WriteLine("      Lista de Tarefas Concluidas   ");
+            Console.WriteLine("        Lista de Tarefas Concluidas   ");
             Console.WriteLine("=======================================");
             foreach (Tarefa item in ListadeTarefasConcluida)
             {
@@ -108,7 +108,10 @@ namespace Projeto03_Gestao_De_Tarefas
 
             if (ListadeTarefasPendentes.Count <= 0)
             {
-                Console.WriteLine("Não existem tarefas pendentes!");
+                Console.WriteLine("");
+                Console.WriteLine("=======================================");
+                Console.WriteLine("      Não há Tarefas Pendentes   ");
+                Console.WriteLine("=======================================");
 
             }
             else
@@ -226,20 +229,30 @@ namespace Projeto03_Gestao_De_Tarefas
                     ListaTarefasPendentesResponsavel.Add(item);
                 }
             }
-            Console.WriteLine("");
-            Console.WriteLine("=======================================");
-            Console.WriteLine($"      Lista de Tarefas de Pendentes de: {responsavelParaBusca.Nome}   ");
-            Console.WriteLine("=======================================");
-            foreach (Tarefa item in ListaTarefasPendentesResponsavel)
+            if (ListaTarefasPendentesResponsavel.Count <= 0)
             {
-                int index = ListaTarefasPendentesResponsavel.IndexOf(item);
-                Console.WriteLine($"Id: {index}");
-                Console.WriteLine($"Título: {item.Titulo}");
-                Console.WriteLine($"Data Limite: {item.DataLimite}");
-                Console.WriteLine($"Status: {item.statusTarefa}");
-                Console.WriteLine($"Prioridade: {item.prioridadeTarefa}");
-                Console.WriteLine($"Responsável: {item.responsavel.Nome} ({item.responsavel.Email})");
+                Console.WriteLine("");
                 Console.WriteLine("=======================================");
+                Console.WriteLine($"      Não há tarefas pendentes de: {responsavelParaBusca.Nome}   ");
+                Console.WriteLine("=======================================");
+            }
+            else
+            {
+                Console.WriteLine("");
+                Console.WriteLine("=======================================");
+                Console.WriteLine($"      Lista de Tarefas de Pendentes de: {responsavelParaBusca.Nome}   ");
+                Console.WriteLine("=======================================");
+                foreach (Tarefa item in ListaTarefasPendentesResponsavel)
+                {
+                    int index = ListaTarefasPendentesResponsavel.IndexOf(item);
+                    Console.WriteLine($"Id: {index}");
+                    Console.WriteLine($"Título: {item.Titulo}");
+                    Console.WriteLine($"Data Limite: {item.DataLimite}");
+                    Console.WriteLine($"Status: {item.statusTarefa}");
+                    Console.WriteLine($"Prioridade: {item.prioridadeTarefa}");
+                    Console.WriteLine($"Responsável: {item.responsavel.Nome} ({item.responsavel.Email})");
+                    Console.WriteLine("=======================================");
+                }
             }
 
         }
@@ -281,20 +294,30 @@ namespace Projeto03_Gestao_De_Tarefas
                     ListaTarefasConcluidasResponsavel.Add(item);
                 }
             }
-            Console.WriteLine("");
-            Console.WriteLine("=======================================");
-            Console.WriteLine($"      Lista de Tarefas de Concluidas de: {responsavelParaBusca.Nome}   ");
-            Console.WriteLine("=======================================");
-            foreach (Tarefa item in ListaTarefasConcluidasResponsavel)
+            if (ListaTarefasConcluidasResponsavel.Count <= 0)
             {
-                int index = ListaTarefasConcluidasResponsavel.IndexOf(item);
-                Console.WriteLine($"Id: {index}");
-                Console.WriteLine($"Título: {item.Titulo}");
-                Console.WriteLine($"Data Limite: {item.DataLimite}");
-                Console.WriteLine($"Status: {item.statusTarefa}");
-                Console.WriteLine($"Prioridade: {item.prioridadeTarefa}");
-                Console.WriteLine($"Responsável: {item.responsavel.Nome} ({item.responsavel.Email})");
+                Console.WriteLine("");
                 Console.WriteLine("=======================================");
+                Console.WriteLine($"      Não há tarefas concluidas de: {responsavelParaBusca.Nome}   ");
+                Console.WriteLine("=======================================");
+            }
+            else
+            {
+                Console.WriteLine("");
+                Console.WriteLine("=======================================");
+                Console.WriteLine($"      Lista de Tarefas de Concluidas de: {responsavelParaBusca.Nome}   ");
+                Console.WriteLine("=======================================");
+                foreach (Tarefa item in ListaTarefasConcluidasResponsavel)
+                {
+                    int index = ListaTarefasConcluidasResponsavel.IndexOf(item);
+                    Console.WriteLine($"Id: {index}");
+                    Console.WriteLine($"Título: {item.Titulo}");
+                    Console.WriteLine($"Data Limite: {item.DataLimite}");
+                    Console.WriteLine($"Status: {item.statusTarefa}");
+                    Console.WriteLine($"Prioridade: {item.prioridadeTarefa}");
+                    Console.WriteLine($"Responsável: {item.responsavel.Nome} ({item.responsavel.Email})");
+                    Console.WriteLine("=======================================");
+                }
             }
         }
 
