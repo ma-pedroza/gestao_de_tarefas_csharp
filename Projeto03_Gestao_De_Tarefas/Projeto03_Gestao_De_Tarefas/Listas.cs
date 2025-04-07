@@ -105,22 +105,33 @@ namespace Projeto03_Gestao_De_Tarefas
                     ListadeTarefasPendentes.Add(item);
                 }
             }
-            Console.WriteLine("");
-            Console.WriteLine("=======================================");
-            Console.WriteLine("       Lista de Tarefas Pendentes   ");
-            Console.WriteLine("=======================================");
-            foreach (Tarefa item in ListadeTarefasPendentes)
+
+            if (ListadeTarefasPendentes.Count <= 0)
             {
-                int index = ListadeTarefa.IndexOf(item);
-                Console.WriteLine($"Id: {index}");
-                Console.WriteLine($"Título: {item.Titulo}");
-                Console.WriteLine($"Data Limite: {item.DataLimite}");
-                Console.WriteLine($"Status: {item.statusTarefa}");
-                Console.WriteLine($"Prioridade: {item.prioridadeTarefa}");
-                Console.WriteLine($"Responsável: {item.responsavel.Nome} ({item.responsavel.Email})");
-                Console.WriteLine("=======================================");
+                Console.WriteLine("Não existem tarefas pendentes!");
 
             }
+            else
+            {
+                Console.WriteLine("");
+                Console.WriteLine("=======================================");
+                Console.WriteLine("       Lista de Tarefas Pendentes   ");
+                Console.WriteLine("=======================================");
+                foreach (Tarefa item in ListadeTarefasPendentes)
+                {
+                    int index = ListadeTarefa.IndexOf(item);
+                    Console.WriteLine($"Id: {index}");
+                    Console.WriteLine($"Título: {item.Titulo}");
+                    Console.WriteLine($"Data Limite: {item.DataLimite}");
+                    Console.WriteLine($"Status: {item.statusTarefa}");
+                    Console.WriteLine($"Prioridade: {item.prioridadeTarefa}");
+                    Console.WriteLine($"Responsável: {item.responsavel.Nome} ({item.responsavel.Email})");
+                    Console.WriteLine("=======================================");
+
+                }
+            }
+
+            
         }
 
         public static void ExibirTarefasPorResponsavel()
